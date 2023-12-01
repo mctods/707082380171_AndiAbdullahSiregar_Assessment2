@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BerandaFragment"
+    android:background="#809506e5">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/psychedelicheader"
+            android:orientation="vertical">
+            <!--tools:context=".home"> -->
+        </FrameLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="390dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/namapemesan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Nama Pemesan"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:id="@+id/isinama"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/namapemesan"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="Masukkan nama lengkap"
+                        android:textColorHint="#80000000"/>
+
+                    <TextView
+                        android:id="@+id/nohp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/isinama"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Nomor Hanphone"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:id="@+id/isinohp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/nohp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="ex: 0853128374939"
+                        android:textColorHint="#80000000"/>
+
+                    <TextView
+                        android:id="@+id/jeniskelamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/isinohp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Jenis Kelamin"
+                        android:textSize="15dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/jeniskelamin">
+                        <RadioButton
+                            android:id="@+id/radioOption1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laki-laki" />
+                        <RadioButton
+                            android:id="@+id/radioOption2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perempuan" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/tipetiket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Tipe Tiket"
+                        android:textSize="15dp"/>
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/tipetiket"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/spinner"
+                        android:layout_marginTop="70dp"
+                        android:backgroundTint="#9506e5"
+                        android:text="PESAN"
+                        android:textColor="#90ffffff"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+</FrameLayout>
